@@ -15,10 +15,10 @@ import {
   Box,
   Link
 } from "@chakra-ui/react";
-import { transform } from "./transform.js";
+import { transform } from "../Utils/transform.js";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-export default function Home() {
+const Home = () => {
   let [value, setValue] = useState("");
   let [outputValue, setOutputValue] = useState("");
   let textAreaRef = useRef(null);
@@ -156,4 +156,6 @@ export default function Home() {
       </VStack>
     </>
   );
-}
+};
+
+export default Home;
